@@ -12,8 +12,6 @@ WOLFTPM_DEPENDENCIES = wolfssl
 WOLFTPM_AUTORECONF = YES
 
 define WOLFTPM_CREATE_RPATH_FILE
-	@echo "WTF"
-	@echo $(value $(@D))
 	mkdir -p "$(@D)/build-aux"
 	touch "$(@D)/build-aux/config.rpath"
 endef
