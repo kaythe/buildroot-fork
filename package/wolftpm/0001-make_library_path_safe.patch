@@ -1,0 +1,12 @@
+diff -u a/m4/have_wolfssl.m4 b/m4/have_wolfssl.m4
+--- a/m4/have_wolfssl.m4
++++ b/m4/have_wolfssl.m4
+@@ -7,7 +7,7 @@
+ AC_DEFUN([_TAO_SEARCH_LIBWOLFSSL],[
+   AC_REQUIRE([AC_LIB_PREFIX])
+ 
+-  LDFLAGS="$LDFLAGS -L/usr/local/lib"
++  LDFLAGS="$LDFLAGS -L${STAGING_DIR}/usr/local/lib"
+   LIBS="$LIBS -lwolfssl"
+ 
+   AC_LIB_HAVE_LINKFLAGS(wolfssl,,
