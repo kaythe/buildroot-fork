@@ -1,0 +1,7 @@
+config BR2_PACKAGE_WOLFTPM
+	bool "wolftpm"
+	select BR2_PACKAGE_WOLFSSL
+	help
+	  Build TPM support for WolfSSL
+	  
+	  https://github.com/wolfSSL/wolfTPM
